@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RechercheActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <EditText
+            android:id="@+id/recherche_zone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:ems="10"
+            android:textSize="14sp"
+            android:hint="Recherchez une zone"
+            android:inputType="text" />
+        <EditText
+            android:id="@+id/recherche_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:ems="10"
+            android:textSize="14sp"
+            android:hint="Recherchez un lieu"
+            android:inputType="text" />
+        <EditText
+            android:id="@+id/recherche_pm25"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:ems="10"
+            android:textSize="14sp"
+            android:hint="Recherchez un seuil de polution pour la particule PM25"
+            android:inputType="numberDecimal" />
+        <EditText
+            android:id="@+id/recherche_pm10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:ems="10"
+            android:textSize="14sp"
+            android:hint="Recherchez un seuil de polution pour la particule PM10"
+            android:inputType="numberDecimal" />
+        <EditText
+            android:id="@+id/recherche_so2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:ems="10"
+            android:textSize="14sp"
+            android:hint="Recherchez un seuil de polution pour la particule SO2"
+            android:inputType="numberDecimal" />
+        <EditText
+            android:id="@+id/recherche_no2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:ems="10"
+            android:textSize="14sp"
+            android:hint="Recherchez un seuil de polution pour la particule NO2"
+            android:inputType="numberDecimal" />
+        <EditText
+            android:id="@+id/recherche_o3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:ems="10"
+            android:textSize="14sp"
+            android:hint="Recherchez un seuil de polution pour la particule O3"
+            android:inputType="numberDecimal" />
+        <EditText
+            android:id="@+id/recherche_co"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:ems="10"
+            android:textSize="14sp"
+            android:hint="Recherchez un seuil de polution pour la particule CO"
+            android:inputType="numberDecimal" />
+        <EditText
+            android:id="@+id/recherche_bc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:ems="10"
+            android:textSize="14sp"
+            android:hint="Recherchez un seuil de polution pour la particule BC"
+            android:inputType="numberDecimal" />
+
+        <Button
+            android:id="@+id/button_lancement_recherche"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Lancez la recherche"
+            android:textColor="@android:color/white"
+            android:layout_margin="12dp"
+            android:background="#1E7FCB"
+            android:foreground="?attr/selectableItemBackground"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

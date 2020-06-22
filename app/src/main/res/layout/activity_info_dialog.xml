@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InfoDialogActivity">
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="310dp"
+        android:layout_height="310dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:background="#77B5FE"
+            android:text="Information"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+                <TextView
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:text="Source : " />
+                <TextView
+                    android:autoLink="web"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColorLink="#0000FF"
+                    android:text="https://www.respire-asso.org/" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorPrimary"/>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:id="@+id/linearLayoutListeInfo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="
+N02 (Dioxyde d'azote) : C’est un gaz toxique entraînant une inflammation
+importante des voies respiratoires à des concentrations dépassant 200 μg/m3, sur de courtes durées. \n
+Valeur recommandées : 40 μg/m3 moyenne annuelle / 200 μg/m3 moyenne horaire" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorPrimary"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="
+S02 (Dioxyde de souffre) : Le SO2 affecte le système respiratoire, le fonctionnement des poumons et
+il provoque des irritations oculaires. \n
+Valeur recommandées : 20 μg/m3 moyenne sur 24 heures / 500 μg/m3 moyenne sur 10 minutes" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorPrimary"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="
+C0 (Monoxyde carbone) : Le CO se fixe à la place de l’oxygène sur l’hémoglobine du sang,
+conduisant à un manque d’oxygénation de l’organisme (coeur, cerveau…). \n
+Valeur recommandées : 10 mg·m-3, pour une exposition de 8 h" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorPrimary"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="
+PM10 (Particules en suspension PM10) : Les particules fines pénètrent en profondeur dans les poumons.
+Elles peuvent être à l’origine d’inflammations, et de l’aggravation
+de l’état de santé des personnes atteintes de maladies cardiaques et pulmonaires. \n
+Valeur recommandées : 40 µg/m3 en moyenne annuelle" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorPrimary"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="
+PM25 (Particules en suspension 2,5) : Les particules fines pénètrent en profondeur dans les
+poumons. Elles peuvent être à l’origine d’inflammations, et de l’aggravation
+de l’état de santé des personnes atteintes de maladies cardiaques et pulmonaires. \n
+Valeur recommandées : Pour les PM2,5, il n’y a pas de réglementation. L’Union européenne
+a fixé son objectif de qualité à 20μg/m3 en moyenne sur l’année" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorPrimary"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="
+O3 (Ozone) : À des concentrations trop élevées, l’ozone a des effets marqués sur la santé de
+l’homme. On observe alors des problèmes respiratoires, le déclenchement de crises
+d’asthme, une diminution de la fonction pulmonaire et l’apparition de maladies respiratoires. \n
+Valeur recommandées : 100 μg/m3 moyenne sur 8 heures" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorPrimary"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text=
+"BC (Black Carbone- Noir de Carbonne) : Le BC forme donc une sous-catégorie des PM2.5, à
+savoir les particules dont le diamètre est inférieur à 2,5 µm. D’un point de vue général,
+les particules fines sont aptes à pénétrer profondément dans le système respiratoire,
+les particules aux diamètres les plus faibles pouvant atteindre les alvéoles pulmonaires
+où le passage de substances dangereuses dans la circulation sanguine est possible. \n
+Valeur recommandées : Pas de réglementation" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

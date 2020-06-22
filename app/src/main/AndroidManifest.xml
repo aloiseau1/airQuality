@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.miage.airquality">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name="com.activeandroid.app.Application"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <!-- Active Android Database definition -->
+        <!-- DB Name -->
+        <meta-data
+            android:name="AA_DB_NAME"
+            android:value="AirQuality" />
+        <!-- DB Version -->
+        <meta-data
+            android:name="AA_DB_VERSION"
+            android:value="1" />
+        <!-- Provider -->
+        <provider
+            android:name="com.activeandroid.content.ContentProvider"
+            android:authorities="org.miage.airquality"
+            android:enabled="true"
+            android:exported="false">
+        </provider>
+
+        <!-- Google Maps API key -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAvLYlOCsQW2Ldl_jOgLpQHSTDK1f-OvCs"/>
+
+        <meta-data
+            android:name="AA_MODELS"
+            android:value="org.miage.airquality.model.responsezone.Zone,
+                            org.miage.airquality.model.location.Location,
+                            org.miage.airquality.model.location.Coordinates,
+                            org.miage.airquality.model.location.Parameter,
+                            org.miage.airquality.model.location.LocationMeasurement,
+                            org.miage.airquality.model.location.DayPrevision" />
+
+        <activity android:name=".DetailLocationActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboardHidden" />
+        <activity android:name=".FavorisActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboardHidden" />
+        <activity android:name=".ListeZonesActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboardHidden" />
+        <activity android:name=".ListeLocationsActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboardHidden" />
+        <activity android:name=".InfoDialogActivity"></activity>
+        <activity android:name=".CarteZonesActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboardHidden"  />
+        <activity android:name=".RechercheActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboardHidden"  />
+        <activity android:name=".RechercheListeLocationActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboardHidden"  />
+        <activity android:name=".MainActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboardHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

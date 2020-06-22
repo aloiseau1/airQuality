@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/location"
+        android:layout_margin="5dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:foreground="?attr/selectableItemBackground">
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <TextView
+                android:id="@+id/location_adapter_city"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/location_espace1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="   "/>
+
+            <TextView
+                android:id="@+id/location_adapter_temperature"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="   "/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <TextView
+                android:id="@+id/location_adapter_no2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="no2 : /" />
+
+            <TextView
+                android:id="@+id/location_espace2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="   "/>
+
+            <TextView
+                android:id="@+id/location_adapter_so2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="so2 : /   " />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <TextView
+                android:id="@+id/location_adapter_co"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="co : /   " />
+
+            <TextView
+                android:id="@+id/location_espace3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="   "/>
+
+            <TextView
+                android:id="@+id/location_adapter_pm10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="pm10 : /   " />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <TextView
+                android:id="@+id/location_adapter_pm25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="pm25 : /   " />
+
+            <TextView
+                android:id="@+id/location_espace4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="   "/>
+
+            <TextView
+                android:id="@+id/location_adapter_o3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="o3 : /   " />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <TextView
+                android:id="@+id/location_adapter_bc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="bc : /   " />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorPrimary"/>
+
+    </LinearLayout>
+
+</LinearLayout>

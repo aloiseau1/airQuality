@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Air Quality</string>
+    <string name="message_accueil">
+        Bienvenue chère visiteur ! \n
+        A travers cette application, vous pourrez obtenir des informations concernant la qualité de l\'air et la prévision météo sur plus d\'une centaine de location en France.
+        Vous pourrez observer une qualité de l\'air qui est au top grâce au COVID-19, et une température claimante qui donne envie de rester chez soi #stayathome.
+    </string>
+    <string name="message_error">
+        Erreur de chargement des données \n
+        Veuillez vérifier que votre téléphone est connecté à internet
+    </string>
+    <string name="info_positive_button">Fermer</string>
+</resources>

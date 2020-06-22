@@ -70,7 +70,7 @@ public class DetailLocationActivity extends AppCompatActivity {
     @BindView(R.id.detail_favoris)
     ImageView mDetailFavoris;
 
-    private static String key = "AIzaSyAvLYlOCsQW2Ldl_jOgLpQHSTDK1f-OvCs";
+    private static String key = "XXX";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
